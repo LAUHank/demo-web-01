@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSON测试</title>
+    <script type="text/javascript">
+        function addCity(result) {
+            var city = document.getElementById("city");
+            city.length=0;
+            var obj=eval(result);
+            for(var i=0;i<obj.length;i++){
+                city.add(new Option(obj[i].name, obj[i].code));
+            }
+        }
+        function addHebeiCity(){
+            var xmlHttp=new XMLHttpRequest();
+            xmlHttp.open("GET", "hebei.json", false);
+            xmlHttp.send(null);
+            var result = xmlHttp.responseText;
+            addCity(result);
+        }
+        function addGuangdongCity(){
+            var xmlHttp=new XMLHttpRequest();
+            xmlHttp.open("GET", "guangdong.json", false);
+            xmlHttp.send(null);
+            var result = xmlHttp.responseText;
+            addCity(result);
+        }
+        function provinceChange(obj){
+            var province = obj.value;
+            if(province=="hebei"){
+                addHebeiCity();
+            }else if(province=="guangdong"){
+                addGuangdongCity();
+            }else{
+                var city = document.getElementById("city");
+                city.length=0;
+            }
+        }
+    </script>
+</head>
+<body>
+<div>JSON测试</div>
+<div>
+    <form id="myForm" action="">
+        省份：<select id="province" style="width: 80px;height: 25px;" onchange="provinceChange(this);">
+        <option value="shandong">山东省</option>
+        <option value="hebei">河北省</option>
+        <option value="shanxi">山西省</option>
+        <option value="hubei">湖北省</option>
+        <option value="guangdong">广东省</option>
+    </select>
+        城市：<select id="city" style="width: 90px;height: 25px;">
+
+    </select>
+    </form>
+
+</div>
+</body>
+</html>

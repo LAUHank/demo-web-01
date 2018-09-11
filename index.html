@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>hello world测试</title>
+    <meta charset="utf-8">
+    <base href="/demo-web-01/">
+    <link rel="stylesheet" href="css/home/home.css">
+    <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/home/home.js"></script>
+</head>
+<body>
+hello world<br/>
+<input type="button" id="cm" value="点我"/>
+测试
+<script type="text/javascript">
+$(function() {
+    $('#cm').click(function() {
+        alert(str);
+    });
+    var str = 'hello world';
+    hw(str);
+});
+</script>
+</body>
+</html>
