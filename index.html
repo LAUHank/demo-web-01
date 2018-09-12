@@ -8,12 +8,51 @@
         div {
             background-color: blue
         }
+        /* 相对定位的元素不管它是否进行移动，元素仍要占据它原来的位置 */
+        .pos-relative {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        /* 绝对定位使元素与文档流无关，脱离了普通流的管理，因此不占据原来的位置 */
+        .pos-absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        /* 相对于浏览器窗口，其余的特点类似于绝对定位，可以制作一个不随滚动条滚动的区域 */
+        .pos-fixed {
+            position: fixed;
+            top: 50px;
+            left: 50px;
+        }
+        /* 浮动的元素脱离普通流 */
+        .flt-right {
+            float: right;
+        }
+        .flt-left {
+            float: left;
+        }
+        .flt-inherit {
+            float: inherit;
+        }
     </style>
     <link rel="stylesheet" href="css/home/home.css">
     <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/home/home.js"></script>
 </head>
 <body>
+<div style="background-color:gray;height:1000px;padding:20px;">
+    <div style="background-color:red;width:300px;height:200px;">
+        第1块
+    </div>
+    <div style="background-color:green;width:300px;height:200px;" class="flt-right">
+        第2块
+    </div>
+    <div style="background-color:blue;width:300px;height:400px;" class="flt-right">
+        第3块
+    </div>
+</div>
 <div class="div-class">
     hello world
     <br/><input type="button" id="cm" value="点我"/>
@@ -25,8 +64,25 @@
 </div>
 <div>
     &nbsp;测试
+    <br><span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
+    <span>一二三四五六七八九十</span>
 </div>
-<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
+<span style="background-color: green;width:80%;height:90px;margin:20px 10px">span_test一二三四五六七八九十</span>
 <br/><input type="button" id="cm2" value="test" style="background-color: green;width:100%;height:90px;margin:20px 10px"/>
 <br/><img src="img/home/football.jpg"/>
 <br/><object data="img/home/football.jpg"></object>
