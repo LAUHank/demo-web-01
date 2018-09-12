@@ -1,3 +1,8 @@
+@charset "utf-8";
 body {
     margin: 0;
+    /*background-image:url("/demo-web-01/img/demo-js/pic2.jpg");*/
+}
+.div_class {
+    background-color: red
 }
