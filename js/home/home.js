@@ -3,4 +3,9 @@
  */
 function hw(str) {
     console.log(str);
+    try {
+        myutil();
+    } catch (e) {
+        console.error(e);
+    }
 }
