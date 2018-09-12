@@ -4,6 +4,7 @@
     <title>hello world测试</title>
     <meta charset="utf-8">
     <base href="/demo-web-01/">
+    <link rel="stylesheet" href="css/home/home.css">
     <style type="text/css">
         div {
             background-color: blue
@@ -37,10 +38,6 @@
             float: inherit;
         }
     </style>
-    <link rel="stylesheet" href="css/home/home.css">
-    <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/home/myutil.js"></script>
-    <script type="text/javascript" src="js/home/home.js"></script>
 </head>
 <body>
 <div style="background-color:gray;height:1000px;padding:20px;">
@@ -89,6 +86,9 @@
 <br/><object data="img/home/football.jpg"></object>
 <!--<br/><object data="html/home/song.mp3"></object>
 <br/><object data="html/home/movie.mp4"></object>-->
+<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/home/myutil.js"></script>
+<script type="text/javascript" src="js/home/home.js"></script>
 <script type="text/javascript">
 $(function() {
     function hw1 (str) {
@@ -102,7 +102,15 @@ $(function() {
         alert(str);
     });
     var str = 'hello world';
+    var str = 'hi world';
     hw(str);
+    var n1 = 0.1;
+    var n2 = 0.2;
+    var n3 = 0.3;
+    console.log(n2 - n1);
+    console.log(n3 - n2);
+    var 我 = 2;
+    console.log(我);
 });
 </script>
 </body>
