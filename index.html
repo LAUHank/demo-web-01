@@ -42,19 +42,19 @@
 <body>
 <div style="background-color:gray;margin:20px;padding:20px;">
     <form id="myForm">
-        姓名:<input type="text" name="name"/><br/>
+        姓名:<input type="text" name="name" value="James"/><br/>
         省份:<select name="province">
             <option value="1">河北省</option>
-            <option value="2">山东省</option>
+            <option value="2" selected="selected">山东省</option>
         </select>
         城市:<select name="city">
             <option value="1">石家庄</option>
-            <option value="2">济南</option>
+            <option value="2" selected="selected">济南</option>
         </select><br/>
-        性别:<input type="radio" name="sex" value="m"/>男
+        性别:<input type="radio" name="sex" value="m" checked="checked"/>男
         <input type="radio" name="sex" value="f"/>女<br/>
         爱好:<input type="checkbox" name="hobby" value="singing"/>唱歌
-        <input type="checkbox" name="hobby" value="swimming"/>游泳<br/>
+        <input type="checkbox" name="hobby" value="swimming" checked="checked"/>游泳<br/>
         <input type="button" value="提交" onclick="checkForm()"/>
     </form>
 </div>
