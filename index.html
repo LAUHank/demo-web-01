@@ -41,7 +41,7 @@
 </head>
 <body>
 <div style="background-color:gray;margin:20px;padding:20px;">
-    <form>
+    <form id="myForm">
         姓名:<input type="text" name="name"/><br/>
         省份:<select name="province">
             <option value="1">河北省</option>
@@ -55,7 +55,7 @@
         <input type="radio" name="sex" value="f"/>女<br/>
         爱好:<input type="checkbox" name="hobby" value="singing"/>唱歌
         <input type="checkbox" name="hobby" value="swimming"/>游泳<br/>
-        <input type="button" value="提交"/>
+        <input type="button" value="提交" onclick="checkForm()"/>
     </form>
 </div>
 <div style="background-color:yellow;font-family: 黑体 ;font-size:20px; font-style:italic;text-indent: 20px;background-repeat: repeat-x;background-image: url('img/home/football.jpg')">
@@ -113,7 +113,10 @@
 <script type="text/javascript" src="js/home/myutil.js"></script>
 <script type="text/javascript" src="js/home/home.js"></script>
 <script type="text/javascript">
-$(function() {
+    function checkForm() {
+        var myFrm = document.getElementById('myForm');
+        console.log(myFrm.hobby[0].value);
+    }
     function hw1 (str) {
         console.log('hehe');
     }
@@ -121,6 +124,7 @@ $(function() {
         console.log('hw');
         myutil();
     }
+$(function() {
     $('#cm').click(function() {
         alert(str);
     });
