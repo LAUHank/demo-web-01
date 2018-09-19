@@ -129,12 +129,13 @@
         myutil();
     }
 $(function() {
-    $('#cm').click(function() {
-        alert(str);
-    });
     var str = 'hello world';
     var str = 'hi world';
     hw(str);
+    $('#cm').click(function() {
+        alert(str);
+        $('#cm').fadeOut();
+    });
     var n1 = 0.1;
     var n2 = 0.2;
     var n3 = 0.3;
