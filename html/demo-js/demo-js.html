@@ -39,6 +39,19 @@
                 city.length=0;
             }
         }
+        var res = '';
+        var xhr = new XMLHttpRequest();
+        var method = 'GET';
+        var url = 'hebei.txt';
+        var asyn = true;
+        xhr.open(method, url, asyn);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                res = xhr.responseText;
+                console.log(res);
+            }
+        };
+        xhr.send(null);
     </script>
 </head>
 <body>
