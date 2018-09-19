@@ -116,6 +116,11 @@
     function checkForm() {
         var myFrm = document.getElementById('myForm');
         console.log(myFrm.hobby[0].value);
+        var v = $('#myForm').find('input[name="sex"]:checked').val();
+        console.log('v='+v);
+        $('#myForm').find('input[name="hobby"]:checked').each(function() {
+            console.log('val='+$(this).val());
+        });
     }
     function hw1 (str) {
         console.log('hehe');
@@ -143,6 +148,7 @@ $(function() {
     console.log(n3 - n2);
     var 我 = 2;
     console.log(我);
+
 });
 </script>
 </body>
