@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bootstrap测试</title>
+    <base href="/demo-web-01/">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Bootstrap测试</h1>
+<input type="button" class="btn btn-default" value="点我"/>
+<div class="container">
+    <h1>水平堆叠</h1>
+    <div class="row">
+        <div class="col-md-6"  style="background-color:pink; box-shadow:inset 2px 2px 20px red,inset -2px -2px 20px blue;">
+            <p class="text-right">11</p>
+            <p>12</p>
+
+        </div>
+        <div class="col-md-6" style="background-color: gray;">
+            <p>21</p>
+            <p>22</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        console.log('hello world');
+    });
+</script>
+</body>
+</html>
