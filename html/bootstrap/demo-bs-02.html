@@ -7,20 +7,50 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-<h1>Bootstrap测试</h1>
-<input type="button" class="btn btn-default" value="点我"/>
 <div class="container">
-    <h1>水平堆叠</h1>
-    <div class="row">
-        <div class="col-md-6"  style="background-color:pink; box-shadow:inset 2px 2px 20px red,inset -2px -2px 20px blue;">
-            <p class="text-right">11</p>
-            <p>12</p>
-
-        </div>
-        <div class="col-md-6" style="background-color: gray;">
-            <p>21</p>
-            <p>22</p>
-        </div>
+    <div class="dropdown pull-left">
+        <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">学院
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="1" href="javascript:;">理学院</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="1" href="javascript:;">文学院</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="1" href="javascript:;">法学院</a>
+            </li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="1" href="javascript:;">分离的链接</a>
+            </li>
+        </ul>
+    </div>
+    <div class="dropdown pull-left">
+        <button type="button" class="btn dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">课程
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="2" href="javascript:;">Java</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="2" href="javascript:;">数据挖掘</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="2" href="javascript:;">数据通信/网络</a>
+            </li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation" class="dropdown-header">下拉菜单标题</li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="2" href="javascript:;">分离的链接</a>
+            </li>
+        </ul>
     </div>
 </div>
 <script type="text/javascript" src="js/jquery/jquery-3.3.1.min.js"></script>
