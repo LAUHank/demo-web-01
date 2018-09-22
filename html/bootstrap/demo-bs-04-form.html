@@ -59,12 +59,15 @@
         var prov = myfrm.province.value;
         console.log('prov='+prov);
         var hobbyarr = myfrm.hobby;//多选按钮的value和其他的不太一样要注意
+        var hobbys = [];
         for (var i = 0; i < hobbyarr.length; i++) {
             var domObj = hobbyarr[i];
             var val = domObj.value;
-            console.log('hobby_val='+val);
+            if (domObj.checked) {
+                hobbys.push(val);
+            }
         }
-
+        console.log('hobbys='+hobbys);
     }
 </script>
 </body>
